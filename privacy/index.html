@@ -30,192 +30,149 @@
   section + section { margin-top:56px; }
 </style>
 </head>
-<body>
-<main>
-<nav class="tabs" aria-label="Language">
-  <a href="#ko">한국어</a>
-  <a href="#en">English</a>
-</nav>
-
-<!-- ============================ 한국어 ============================ -->
+<body><main><nav class="tabs" aria-label="Language"><a href="#ko">한국어</a><a href="#en">English</a><a href="../delete-account/">삭제 요청 / Delete data</a></nav>
 <section id="ko" lang="ko">
 <h1>HandsFree Seoul 개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 11월 22일</p>
-
-<p>핸즈프리 서울(이하 "회사")는 쇼핑 짐 당일 배송 서비스 "HandsFree Seoul"(이하 "서비스")을 운영하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 이 방침은 회사가 어떤 개인정보를 어떤 목적으로 처리하고, 어떻게 보호하는지 알려드립니다.</p>
-
-<h2>1. 처리하는 개인정보 항목</h2>
-<p>서비스는 회원가입 없이 이용할 수 있으며, 앱 실행 시 이름·이메일이 없는 익명 식별자가 자동으로 생성됩니다.</p>
+<p class="meta">최초 시행: 2026년 11월 22일 · 최신 기능 안내 정정: 2026년 11월 26일</p>
+<div class="box"><strong>이번 정정 안내</strong><p>주문에 필요한 짐 사진, 문제 신고, 보존 예외 및 외부 지도 서비스의 처리를 구체적으로 설명했습니다. 이전 안내의 “사진은 선택”과 “모든 개인정보를 배송 후 1개월 이내 삭제”는 현재 앱의 처리 방식을 정확히 설명하지 못해 아래와 같이 정정합니다. 이 안내만으로 새로운 수집 동의나 보관 기간 연장에 동의한 것으로 보지 않습니다.</p><a href="archive/2026-11-22.html">이전 방침 보기</a></div>
+<p>핸즈프리 서울(이하 “회사”)는 짐 픽업·배송 서비스 HandsFree Seoul을 운영합니다. 이 방침은 고객용 앱과 이에 연결된 주문·배송·문의 처리에 적용됩니다.</p>
+<h2>1. 처리하는 정보와 목적</h2>
+<p>별도의 이메일·비밀번호 회원가입 없이 이용할 수 있습니다. 주문 등 서버 기능을 이용할 때 익명 인증 계정과 식별자가 생성되어 기기에 세션으로 유지됩니다. 이 식별자는 주문·메신저 정보와 연결되므로, 개인을 식별할 수 없는 완전한 익명 정보라는 뜻은 아닙니다.</p>
 <div class="wrap"><table>
-<tr><th>구분</th><th>항목</th></tr>
-<tr><td>연락 정보 (필수)</td><td>이름 또는 닉네임, 연락받을 메신저 종류(LINE·Instagram·WeChat), WeChat ID 또는 LINE·Instagram 연동 식별자</td></tr>
-<tr><td>주문·배송 정보 (필수)</td><td>픽업 장소(주소·좌표), 도착 호텔명·주소·좌표, 객실 번호, 짐 개수·무게, 요금, 결제 방법, 주문번호, 주문 상태 기록</td></tr>
-<tr><td>사진 (선택)</td><td>영수증 사진과 여기서 읽어낸 매장명·품목·금액, 호텔 예약 확인서 이미지, 짐 사진</td></tr>
-<tr><td>위치 정보 (선택)</td><td>현재 위치(쇼핑 지역 감지), 실시간 위치 공유에 동의한 경우 픽업 전까지의 위치·정확도</td></tr>
-<tr><td>자동 생성 정보</td><td>익명 사용자 식별자, 푸시 알림 토큰</td></tr>
-<tr><td>배송 기사가 생성하는 정보</td><td>픽업·배송 완료 확인 사진, 배송 처리 기록</td></tr>
+<tr><th>구분</th><th>정보</th><th>목적</th></tr>
+<tr><td>주문 시 필수</td><td>이름 또는 닉네임, 선택한 메신저 종류, WeChat ID 또는 LINE·Instagram 연동 식별자</td><td>고객 확인, 연락 및 배송 안내</td></tr>
+<tr><td>주문·배송</td><td>픽업 주소·좌표, 호텔명·주소·좌표·객실 번호, 짐 개수·무게·금액, 주문번호, 요금·결제 방법, 진행 상태·처리 시각, 입력한 요청 사항</td><td>접수, 요금 산정, 기사 배정, 배송 및 고객 지원</td></tr>
+<tr><td>짐 사진 (주문 시 필수)</td><td>고객이 촬영한 짐 사진</td><td>짐 식별 및 픽업·배송 확인</td></tr>
+<tr><td>문자 인식 (선택)</td><td>영수증·호텔 예약 확인서 이미지와 추출한 매장·품목·금액·호텔 정보</td><td>주문 정보 입력 보조. 이미지가 인식 서버와 OpenAI API로 전송됨</td></tr>
+<tr><td>위치 (선택)</td><td>현재 위치·정확도, 공유 중인 위치·갱신 시각</td><td>쇼핑 지역·픽업 장소 확인, 동의한 경우 픽업 전 고객 위치 공유</td></tr>
+<tr><td>신고·문의 (이용 시)</td><td>신고 종류(분실·파손·오배송·지연 등), 내용, 첨부 사진 최대 3장, 접수·처리 시각, 처리 상태, 관리자 답변</td><td>문제 조사, 답변, 분쟁 및 증빙 관리</td></tr>
+<tr><td>배송 과정에서 생성</td><td>기사의 픽업·배송 확인 사진, 배송 이벤트 및 위치 기록, 운영자의 처리·증빙 접근 기록</td><td>배송 진행, 완료 확인, 문제 해결 및 접근 관리</td></tr>
+<tr><td>인증·알림·기술 정보</td><td>익명 계정 식별자·세션, 언어 설정, 알림 허용 시 푸시 토큰, 서버 접속·오류 기록. 지도 서비스의 IP 주소, 기기·요청 메타데이터, 진단·충돌 정보, SDK 식별자 및 지도 상호작용 정보</td><td>접근 제어, 알림, 보안·안정성 및 지도 제공. Google의 처리는 5~6항 참조</td></tr>
 </table></div>
-<p>카메라·사진·위치 권한은 해당 기능을 사용할 때에만 요청하며, 거부해도 직접 입력으로 서비스를 이용할 수 있습니다. 신용카드 번호 등 결제 수단 정보는 앱에서 수집하지 않습니다.</p>
-
-<h2>2. 처리 목적</h2>
-<ul>
-<li>짐 픽업·배송 주문 접수, 배송 기사 배정, 배송 진행</li>
-<li>픽업·배송 완료 등 진행 상황 안내(메신저·푸시 알림)</li>
-<li>영수증·예약 확인서 내용 자동 입력, 요금 산정</li>
-<li>배송 기사와 고객 간 위치 확인, 분실·파손 등 분쟁 처리</li>
-<li>부정 이용 방지 및 서비스 안정성 확보</li>
-</ul>
-<p>위 목적 외의 용도로는 이용하지 않으며, 마케팅·광고 목적으로 이용하지 않습니다.</p>
-
-<h2>3. 보유 및 이용 기간</h2>
-<p>개인정보는 <strong>배송 완료 후 1개월 이내에 삭제</strong>합니다. 주문이 취소된 경우에도 취소일로부터 1개월 이내에 삭제합니다. 실시간 위치 공유는 픽업이 끝나거나 이용자가 공유를 중지하면 즉시 중단됩니다.</p>
-<p>다만 관계 법령에서 보존을 요구하는 경우(예: 「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 대금 결제 및 재화 등의 공급에 관한 기록 5년, 소비자 불만 또는 분쟁처리 기록 3년)에는 해당 기간 동안 필요한 최소 정보만 분리하여 보관합니다.</p>
-
-<h2>4. 파기 절차 및 방법</h2>
-<p>보유 기간이 지난 개인정보는 자동 삭제 작업으로 지체 없이 파기합니다. 전자 파일은 복구할 수 없는 방법으로 삭제하며, 서버에 저장된 사진 파일도 함께 삭제합니다.</p>
-
-<h2>5. 개인정보의 제3자 제공</h2>
-<p>회사는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 법령에 근거가 있거나 수사기관이 적법한 절차에 따라 요청하는 경우는 예외로 합니다.</p>
-
-<h2>6. 처리 위탁 및 국외 이전</h2>
-<p>회사는 서비스 운영을 위해 아래 업체에 개인정보 처리를 위탁하고 있으며, 주문 데이터는 서울 리전 서버에 저장되며, 일부 기능은 국외에서 처리됩니다. 이전은 서비스 이용 시 암호화된 네트워크(HTTPS)를 통해 이루어집니다.</p>
-<div class="wrap"><table>
-<tr><th>수탁 업체 (국가)</th><th>위탁 업무</th><th>이전 항목</th></tr>
-<tr><td>Supabase, Inc. (미국 법인, 데이터 저장 위치: 대한민국 서울)</td><td>데이터베이스·파일 저장, 익명 인증</td><td>1항의 모든 항목</td></tr>
-<tr><td>OpenAI, L.L.C. (미국)</td><td>영수증·호텔 예약 확인서 이미지 문자 인식</td><td>업로드한 영수증·예약 확인서 이미지</td></tr>
-<tr><td>Google LLC (미국)</td><td>지도 표시, 호텔·장소 검색</td><td>검색어, 지도 표시 위치</td></tr>
-<tr><td>650 Industries, Inc. (Expo, 미국)</td><td>푸시 알림 발송</td><td>푸시 알림 토큰, 알림 내용</td></tr>
-<tr><td>LY Corporation (LINE, 일본)</td><td>LINE 알림 발송 (LINE 선택 시)</td><td>LINE 연동 식별자, 알림 내용</td></tr>
-<tr><td>Meta Platforms, Inc. (Instagram, 미국)</td><td>Instagram DM 알림 발송 (Instagram 선택 시)</td><td>Instagram 연동 식별자, 알림 내용</td></tr>
+<p>카드 번호·계좌 비밀번호는 앱에서 수집하지 않으며 배송 요금은 현장 결제 방식으로 안내합니다. 사진과 신고 내용에는 배송·문제 해결에 필요 없는 신분증, 카드 정보, 다른 사람의 얼굴 등은 포함하지 마세요.</p>
+<h2>2. 선택 기능과 권한</h2>
+<ul><li>카메라는 짐·영수증·예약서·신고 사진 촬영에 사용합니다. 짐 사진은 앱 내 주문 접수에 필요하므로 카메라 사용을 거부하면 주문을 완료할 수 없습니다.</li>
+<li>영수증·예약 확인서 인식은 선택 기능이며 직접 입력할 수 있습니다. 선택한 이미지 전체가 문자 인식 업체에 전송될 수 있습니다.</li>
+<li>사진 선택은 예약서나 신고 첨부에 사용하며 선택한 파일을 처리합니다.</li>
+<li>현재 위치와 실시간 위치 공유는 선택입니다. 실시간 공유는 기본으로 꺼져 있고, 앱을 사용하는 동안 동의한 경우에만 수행합니다. 공유 중지 또는 픽업 완료 시 추가 공유를 중단합니다. 이미 전송된 기록은 3항에 따라 처리합니다.</li>
+<li>알림 권한은 배송 안내를 받기 위한 선택 권한입니다. 기기 설정에서 권한을 변경할 수 있습니다.</li></ul>
+<h2>3. 보유 기간과 보존 예외</h2>
+<p>배송에 필요한 직접 식별 정보는 원칙적으로 단기간만 보유합니다. 현재 정기 정리 작업의 구체적인 기준은 다음과 같습니다.</p>
+<div class="wrap"><table><tr><th>대상</th><th>정리 기준</th></tr>
+<tr><td>종료된 주문의 이름·연락처·주소·객실·좌표 등</td><td>배송 완료·취소·실패 등 종료 상태에서 해당 주문의 마지막 변경 후 30일이 지나면 정기 작업에서 지우거나 대체합니다. 미완료 초안·결제 대기 주문은 생성 후 30일이 기준입니다. 진행 중 주문이나 아래 보존 예외에는 적용되지 않습니다.</td></tr>
+<tr><td>짐·픽업·배송·신고 사진</td><td>기본 보유 기간은 업로드 기록 생성 후 30일입니다. 보존 예외가 없고 만료되면 정기 작업에서 저장 파일과 사진 기록을 삭제합니다.</td></tr>
+<tr><td>영수증 품목·금액 기록</td><td>배송 완료 기록 후 30일 또는 해당 주문의 식별 정보 정리 시 삭제합니다. 문자 인식용 원본 이미지의 외부 처리는 6항을 따릅니다.</td></tr>
+<tr><td>신고 및 분쟁 증빙</td><td>접수·검토 중인 신고, 사고 검토 중인 주문은 관련 증빙을 보존합니다. 신고 해결 후에도 30일 동안 보존하고, 이후 다른 보존 사유가 없고 주문 정리 조건을 충족하면 신고 내용·답변을 제거합니다. 운영자가 별도로 증빙 보존을 설정한 경우 사유와 종료일을 기록하며, 설정 1회당 최대 365일 범위입니다. 연장이 필요하면 사유·종료일을 다시 기록합니다.</td></tr>
+<tr><td>프로필 연락 정보·메신저 연동·푸시 토큰</td><td>해당 고객의 남은 주문들이 모두 식별 정보 정리 대상이 되어 정리될 때 함께 제거합니다. 아직 진행·보존 중인 주문이 있으면 그 처리를 위해 남을 수 있습니다.</td></tr>
+<tr><td>인증 계정과 남는 주문·감사 기록</td><td>익명 인증 계정 식별자, 주문과의 연결, 주문번호·상태·요금·처리 이력 및 일부 증빙 감사 기록은 위 정기 작업만으로 모두 삭제되지 않습니다. 계정·접근 관리와 주문 처리 이력 확인에 사용하며, 계정과 관련 데이터 전체의 삭제는 7항으로 요청할 수 있습니다. 이 기록을 완전히 익명화되었다고 보지 않습니다.</td></tr>
 </table></div>
-<p>보유 기간은 3항과 같으며, 각 업체는 위탁 계약 종료 또는 목적 달성 시 정보를 삭제합니다. 국외 이전을 원하지 않으면 서비스 이용을 중단하거나 아래 연락처로 삭제를 요청할 수 있습니다. 다만 이 경우 배송 서비스 이용이 제한될 수 있습니다.</p>
-
-<h2>7. 이용자의 권리와 행사 방법</h2>
-<p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 앱의 "개인정보 및 데이터 관리" 화면 또는 아래 이메일로 주문번호와 함께 요청하시면, 본인 확인 후 10일 이내에 처리 결과를 안내합니다.</p>
-
-<h2>8. 안전성 확보 조치</h2>
-<ul>
-<li>앱과 서버 간 모든 통신 암호화(HTTPS)</li>
-<li>데이터베이스 행 단위 접근 제어로 본인 주문과 배정된 배송 기사만 접근</li>
-<li>배송 사진은 비공개 저장소에 보관하고, 시간 제한이 있는 링크로만 열람</li>
-<li>보유 기간이 지난 데이터 자동 삭제</li>
-</ul>
-
-<h2>9. 자동 수집 장치</h2>
-<p>앱은 광고 식별자나 쿠키를 이용한 행태 정보 수집·추적을 하지 않습니다.</p>
-
-<h2>10. 아동의 개인정보</h2>
-<p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다.</p>
-
+<p>정리 작업은 일 단위로 실행되며, 처리량·오류나 증빙 보존에 따라 실제 처리 시점이 늦어질 수 있습니다. 따라서 “배송 완료일부터 1개월 이내에 모든 데이터가 자동 삭제된다”는 의미는 아닙니다. 보존 필요가 사라지면 해당 정리 절차를 적용합니다.</p>
+<p>법령상 보존 의무가 적용되는 거래·분쟁 기록은 그 의무에 필요한 항목과 기간에 한하여 보관하고 사용을 제한합니다. 삭제 요청 시 보관이 필요한 항목, 근거 및 기간을 안내합니다. 외부 업체의 보안 로그·백업 등은 회사의 주문 정리 작업과 별도의 주기로 처리될 수 있습니다.</p>
+<h2>4. 삭제 방법</h2>
+<p>기간이 지난 직접 식별 필드는 삭제하거나 식별 정보를 포함하지 않는 값으로 대체하고, 대상 사진은 파일 저장소에서 삭제합니다. 신고 내용과 답변도 정리 대상에 포함합니다. 주문 이력이나 계정 식별자가 남는 처리는 계정 전체 삭제와 다릅니다. 오류로 정리가 완료되지 않은 경우 확인 후 재처리합니다. 앱을 삭제하는 것만으로 서버의 계정·주문 정보가 삭제되지는 않습니다.</p>
+<h2>5. 배송 담당자 및 외부 서비스의 처리</h2>
+<p>배송과 지원에 필요한 범위에서 배정된 배송 기사와 권한 있는 운영자가 주문·연락처·위치·사진을 확인합니다. 회사는 고객 정보를 판매하거나 자체 맞춤형 광고 목적으로 이용하지 않습니다.</p>
+<p>아래 서비스 제공업체는 기능 제공에 필요한 정보를 처리합니다. 특히 Google 지도 SDK는 회사가 입력한 주문 정보 외에도 기술 정보를 직접 수집하고 서비스 운영·품질 개선 등에 사용할 수 있습니다. 선택한 메신저에서의 처리는 해당 서비스의 정책도 적용됩니다. 법령에 근거한 적법한 요청이 있는 경우 필요한 범위의 정보를 제공할 수 있습니다.</p>
+<h2>6. 서비스 제공업체 및 국외 처리</h2>
+<p>회사 주문 저장소는 Supabase를 이용하며, 외부 기능을 사용할 때 HTTPS 등 암호화된 통신으로 필요한 정보가 전송됩니다. 아래 국가는 업체 소재지 기준이며 업체의 글로벌 인프라·지원 과정에서 국외 처리가 이루어질 수 있습니다.</p>
+<div class="wrap"><table><tr><th>업체</th><th>처리 내용</th><th>기간·추가 안내</th></tr>
+<tr><td>Supabase, Inc. (미국)</td><td>주문·프로필·사진·신고·인증 저장 및 서버 기능</td><td>회사 관리 데이터는 3항 기준. 업체 로그·백업은 서비스 설정·계약에 따름. <a href="https://supabase.com/privacy">업체 방침·연락처</a></td></tr>
+<tr><td>OpenAI (미국)</td><td>인식 기능 사용 시 영수증·호텔 예약서 이미지와 인식 요청</td><td>응답 저장을 비활성화한 API 요청을 사용하지만 즉시·무보관 처리를 보장하지 않습니다. 기본 악용 방지 로그는 최대 30일 보관될 수 있으며 법령·보안상 예외가 있을 수 있습니다. <a href="https://developers.openai.com/api/docs/guides/your-data">API 데이터 처리 안내</a> · <a href="https://openai.com/policies/privacy-policy/">방침·연락처</a></td></tr>
+<tr><td>Google LLC (미국)</td><td>지도·장소 검색어, 지도 위치, IP 주소, 기기·요청 메타데이터, 진단·충돌 정보, SDK 식별자, 지도 상호작용</td><td>지도 제공 및 Google 서비스 유지·개선 등, 보유 기간은 정보 유형과 Google 정책에 따름. <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">SDK 처리 안내</a> · <a href="https://policies.google.com/privacy">방침·연락처</a></td></tr>
+<tr><td>650 Industries, Inc. (Expo, 미국), Google Firebase Cloud Messaging</td><td>알림 사용 시 푸시 토큰·알림 내용 및 전송 정보</td><td>알림 전달 및 서비스 운영에 필요한 기간, 각 서비스 정책에 따름. <a href="https://expo.dev/privacy">Expo</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a></td></tr>
+<tr><td>LY Corporation (LINE, 일본)</td><td>LINE 선택·연동 시 식별자, 연동 이벤트 및 알림 내용</td><td>회사 연동 기록은 3항, LINE 내 기록은 해당 업체 정책에 따름. <a href="https://www.lycorp.co.jp/en/company/privacypolicy/">방침·연락처</a></td></tr>
+<tr><td>Meta Platforms (Instagram, 미국)</td><td>Instagram 선택·연동 시 식별자, 연동 이벤트 및 DM 알림 내용</td><td>회사 연동 기록은 3항, Instagram 내 기록은 해당 업체 정책에 따름. <a href="https://privacycenter.instagram.com/policy/">방침·연락처</a></td></tr>
+</table></div>
+<p>선택 기능의 국외 처리를 원하지 않으면 이미지 인식을 사용하지 않고 직접 입력하거나 해당 메신저 연동·알림 기능을 사용하지 않을 수 있습니다. 필수 서버 처리를 원하지 않으면 앱 내 주문 서비스가 제한될 수 있습니다. 처리 중단이나 삭제는 아래 연락처로 요청할 수 있습니다. 업체가 보유한 정보를 회사가 모두 즉시 삭제할 수 있다고 보장하지 않습니다.</p>
+<h2 id="delete-ko">7. 계정·데이터 삭제 및 이용자 권리</h2>
+<p>정보 열람·정정·삭제·처리 정지를 요청할 수 있습니다. <strong>익명 이용 계정과 관련 데이터 전체</strong> 또는 특정 주문만 삭제해 달라고 요청할 수 있습니다.</p>
+<ol><li>앱의 “개인정보 및 데이터 관리”에서 이메일 삭제 요청을 선택하거나, <a href="../delete-account/">웹 삭제 요청 안내</a>를 이용하세요. 앱을 재설치하거나 로그인할 필요는 없습니다.</li>
+<li><a href="mailto:daonnaru01@gmail.com?subject=HandsFree%20Seoul%20account%20and%20data%20deletion">daonnaru01@gmail.com</a>으로 원하는 삭제 범위와 주문번호를 보내주세요. 번호를 모르면 이용 시점과 연락 메신저를 알려주세요. 비밀번호·신분증·카드 번호는 보내지 마세요.</li>
+<li>타인의 정보 삭제를 막기 위해 필요한 범위에서 본인 여부를 확인합니다. 원칙적으로 요청 접수 후 10일 이내에 처리 결과 또는 추가 확인·보존 사유와 예상 처리 일정을 안내합니다.</li></ol>
+<p>전체 삭제 요청은 인증 계정, 프로필·연동·푸시 토큰, 관련 주문의 식별 정보·사진·신고 내용을 대상으로 검토합니다. 법령상 보관 또는 진행 중인 배송·분쟁 때문에 즉시 삭제할 수 없는 항목은 사유·기간을 안내하고 접근을 제한합니다. 전체 삭제 후 기존 세션으로 주문 조회가 불가능할 수 있습니다.</p>
+<h2>8. 안전성 확보</h2>
+<p>앱과 서버 간 암호화 통신, 역할과 주문 소유 관계에 따른 접근 제어, 비공개 사진 저장소와 유효기간이 있는 열람 링크를 사용합니다. 권한 있는 관리자·배정 기사 등 업무상 필요한 사용자로 접근을 제한하고 증빙 접근 기록을 관리합니다.</p>
+<h2>9. 자동 수집 및 기기 저장</h2>
+<p>기기에 인증 세션과 서비스 이용 설정을 저장합니다. 회사는 앱에 광고 SDK를 통한 맞춤형 광고 기능을 운영하지 않습니다. 지도 SDK 및 외부 웹·메신저 페이지에서는 각 업체 정책에 따른 기술 정보 처리나 쿠키 사용이 있을 수 있습니다.</p>
+<h2>10. 아동</h2>
+<p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 해당 아동의 정보를 알면서 수집하지 않습니다. 관련 정보가 처리되었다면 아래 연락처로 알려주세요.</p>
 <h2>11. 개인정보 보호책임자</h2>
-<div class="box">
-<p>상호: 핸즈프리 서울<br>
-사업자등록번호: 204-33-19337<br>
-개인정보 보호책임자: 이정우 (대표)<br>
-이메일: <a href="mailto:daonnaru01@gmail.com">daonnaru01@gmail.com</a></p>
-</div>
-
-<h2>12. 권익 침해 구제 방법</h2>
-<p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다.</p>
-<ul>
-<li>개인정보침해신고센터: privacy.kisa.or.kr / 국번 없이 118</li>
-<li>개인정보분쟁조정위원회: www.kopico.go.kr / 1833-6972</li>
-<li>대검찰청: www.spo.go.kr / 국번 없이 1301</li>
-<li>경찰청: ecrm.police.go.kr / 국번 없이 182</li>
-</ul>
-
-<h2>13. 방침의 변경</h2>
-<p>이 방침이 변경되면 시행 7일 전부터 이 페이지를 통해 알려드립니다. 이용자 권리에 중요한 변경은 30일 전에 알려드립니다.</p>
+<div class="box">상호: 핸즈프리 서울<br>사업자등록번호: 204-33-19337<br>대표·개인정보 보호책임자: 이정우<br>이메일: <a href="mailto:daonnaru01@gmail.com">daonnaru01@gmail.com</a></div>
+<h2>12. 문의 및 피해 구제</h2>
+<p>개인정보 관련 문의는 위 이메일로 접수할 수 있습니다. 외부 상담·분쟁 조정은 <a href="https://privacy.kisa.or.kr/">개인정보침해신고센터</a> 또는 <a href="https://www.kopico.go.kr/">개인정보분쟁조정위원회</a>를 이용할 수 있습니다.</p>
+<h2>13. 방침 변경</h2>
+<p>변경 사항은 이 페이지에 안내하며, 일반 변경은 시행 7일 전, 이용자 권리에 중요한 변경은 30일 전에 안내합니다. 별도 동의가 필요한 경우 해당 절차를 거칩니다. 2026년 11월 26일 게시물은 최신 앱의 기존 처리 현황을 구체화하고 부정확한 안내를 정정한 것입니다.</p>
 </section>
 
-<!-- ============================ English ============================ -->
 <section id="en" lang="en">
 <h1>HandsFree Seoul Privacy Policy</h1>
-<p class="meta">Effective date: November 22, 2026</p>
-
-<p>Hands Free Seoul ("we", "us") operates HandsFree Seoul, a same-day shopping luggage delivery service in Seoul (the "Service"). This policy explains what personal information we process, why, and how we protect it, in accordance with the Personal Information Protection Act of Korea and other applicable laws. If the Korean and English versions differ, the Korean version prevails.</p>
-
-<h2>1. Information we process</h2>
-<p>You can use the Service without creating an account. When you open the app, an anonymous identifier with no name or email is created automatically.</p>
-<div class="wrap"><table>
-<tr><th>Category</th><th>Items</th></tr>
-<tr><td>Contact (required)</td><td>Name or nickname, preferred messenger (LINE, Instagram, WeChat), WeChat ID or LINE / Instagram link identifier</td></tr>
-<tr><td>Order &amp; delivery (required)</td><td>Pickup location (address, coordinates), destination hotel name, address and coordinates, room number, number and weight of bags, fare, payment method, order number, order status history</td></tr>
-<tr><td>Photos (optional)</td><td>Receipt photos and the store, items and amounts read from them, hotel booking confirmation images, luggage photos</td></tr>
-<tr><td>Location (optional)</td><td>Current location (to detect your shopping area); if you turn on live location sharing, your location and accuracy until pickup</td></tr>
-<tr><td>Generated automatically</td><td>Anonymous user identifier, push notification token</td></tr>
-<tr><td>Created by our delivery crew</td><td>Pickup and delivery confirmation photos, delivery records</td></tr>
+<p class="meta">First effective: November 22, 2026 · Latest-feature clarification: November 26, 2026</p>
+<div class="box"><strong>Correction notice</strong><p>This update explains required luggage photos, reports, preservation exceptions and external map processing. The earlier statements that all photos were optional and all personal data would be deleted within one month of delivery did not accurately describe the current app. This notice does not itself constitute consent to new collection or longer retention.</p><a href="archive/2026-11-22.html#en">Previous policy</a></div>
+<p>Hands Free Seoul (“we”) operates HandsFree Seoul, a luggage pickup and delivery service. This policy covers the customer app and connected order, delivery and support processing. The Korean version prevails if the translations differ.</p>
+<h2>1. Information and purposes</h2>
+<p>No separate email/password registration is required. When server functions such as ordering are used, an anonymous authentication account and identifier are created and a session is retained on your device. That identifier is linked to orders and contact details; “anonymous” does not mean the information cannot identify you.</p>
+<div class="wrap"><table><tr><th>Category</th><th>Information</th><th>Purpose</th></tr>
+<tr><td>Required contact</td><td>Name or nickname, selected messenger, WeChat ID or LINE/Instagram link identifier</td><td>Customer identification, contact and updates</td></tr>
+<tr><td>Order and delivery</td><td>Pickup address/coordinates, hotel name/address/coordinates/room, bag count/weight/value, order number, fare/payment method, status/timestamps and requests you enter</td><td>Order acceptance, pricing, assignment, delivery and support</td></tr>
+<tr><td>Required luggage photo</td><td>Photo you take of your luggage</td><td>Luggage identification and pickup/delivery verification</td></tr>
+<tr><td>Optional text recognition</td><td>Receipt/booking images and extracted store, items, amounts and hotel details</td><td>Help entering order details; images go to our recognition server and OpenAI API</td></tr>
+<tr><td>Optional location</td><td>Current/shared location, accuracy and update time</td><td>Area/pickup identification and opt-in location sharing before pickup</td></tr>
+<tr><td>Reports and support, if used</td><td>Issue category, description, up to three attached photos, status, timestamps and administrator replies</td><td>Investigation, support, disputes and evidence management</td></tr>
+<tr><td>Delivery records</td><td>Crew pickup/delivery photos, events/location records, operational actions and evidence access logs</td><td>Delivery, completion verification, issue resolution and access management</td></tr>
+<tr><td>Authentication, notifications and technical data</td><td>Anonymous account/session, language, push token if enabled, server access/error logs; map-service IP address, device/request metadata, diagnostics/crashes, SDK identifier and map interactions</td><td>Access control, alerts, security, reliability and maps; see sections 5–6 for Google processing</td></tr>
 </table></div>
-<p>We ask for camera, photo and location permissions only when you use the related feature. If you decline, you can still enter the information manually. The app does not collect card numbers or other payment instrument details.</p>
-
-<h2>2. Why we use it</h2>
-<ul>
-<li>To accept pickup and delivery orders, assign a crew member and deliver your luggage</li>
-<li>To send pickup and delivery updates by messenger and push notification</li>
-<li>To fill in order details from receipts and booking confirmations and calculate fares</li>
-<li>To help you and the crew find each other, and to handle loss, damage or other disputes</li>
-<li>To prevent misuse and keep the Service reliable</li>
-</ul>
-<p>We do not use your information for any other purpose, including marketing or advertising.</p>
-
-<h2>3. How long we keep it</h2>
-<p>We <strong>delete your personal information within one month after delivery is completed</strong>. If an order is cancelled, we delete it within one month of cancellation. Live location sharing stops as soon as pickup is complete or you turn it off.</p>
-<p>Where Korean law requires us to keep certain records (for example, payment and supply records for 5 years and complaint or dispute records for 3 years under the Act on Consumer Protection in Electronic Commerce), we keep only the minimum required information, stored separately, for that period.</p>
-
-<h2>4. How we delete it</h2>
-<p>An automated job deletes information once its retention period ends. Electronic records are deleted so they cannot be recovered, and photo files on our servers are deleted along with them.</p>
-
-<h2>5. Sharing with third parties</h2>
-<p>We do not provide your personal information to third parties, except where required by law or requested by authorities through lawful procedures.</p>
-
-<h2>6. Service providers and international transfers</h2>
-<p>We use the following providers to run the Service. Order data is stored on servers in Seoul; some features are processed outside Korea. Data is transferred over encrypted connections (HTTPS) while you use the Service.</p>
-<div class="wrap"><table>
-<tr><th>Provider (country)</th><th>Purpose</th><th>Data transferred</th></tr>
-<tr><td>Supabase, Inc. (US company; data stored in Seoul, Korea)</td><td>Database and file storage, anonymous sign-in</td><td>All items in section 1</td></tr>
-<tr><td>OpenAI, L.L.C. (USA)</td><td>Reading text from receipt and hotel booking images</td><td>Receipt and booking images you upload</td></tr>
-<tr><td>Google LLC (USA)</td><td>Maps, hotel and place search</td><td>Search terms, map locations</td></tr>
-<tr><td>650 Industries, Inc. (Expo, USA)</td><td>Push notifications</td><td>Push token, notification content</td></tr>
-<tr><td>LY Corporation (LINE, Japan)</td><td>LINE notifications (if you choose LINE)</td><td>LINE link identifier, notification content</td></tr>
-<tr><td>Meta Platforms, Inc. (Instagram, USA)</td><td>Instagram DM notifications (if you choose Instagram)</td><td>Instagram link identifier, notification content</td></tr>
+<p>The app does not collect card numbers or bank passwords; delivery payment is handled on site. Do not include unnecessary IDs, card details, other people’s faces or unrelated personal information in photos or reports.</p>
+<h2>2. Choices and permissions</h2>
+<ul><li>The camera is used for luggage, receipts, booking documents and report photos. A luggage photo is required for in-app ordering; without camera access you cannot complete an order.</li>
+<li>Receipt/booking recognition is optional; manual entry is available. The entire selected image may be transmitted to the recognition provider.</li>
+<li>Photo selection processes the file you choose for a booking document or report attachment.</li>
+<li>Current location and live sharing are optional. Live sharing is off by default and only runs with your choice while using the app. Further sharing stops when you turn it off or pickup is complete. Previously transmitted records follow section 3.</li>
+<li>Delivery notifications are optional. Permissions can be changed in device settings.</li></ul>
+<h2>3. Retention and exceptions</h2>
+<p>We aim to retain direct identifying delivery details only briefly. The current scheduled cleanup uses these rules:</p>
+<div class="wrap"><table><tr><th>Records</th><th>Cleanup rule</th></tr>
+<tr><td>Name, contact, address, room and coordinates in closed orders</td><td>Removed or replaced after 30 days since the order was last changed while in a completed, cancelled or failed state. Abandoned drafts/payment-pending orders use 30 days from creation. Active orders and preservation exceptions are excluded.</td></tr>
+<tr><td>Luggage, pickup, delivery and report photos</td><td>Normally expire 30 days after the upload record is created. Scheduled cleanup deletes expired files and photo records unless preserved.</td></tr>
+<tr><td>Receipt items and amounts</td><td>Deleted 30 days after a delivery-completed event, or when the order’s identifying details are cleared. External processing of recognition images follows section 6.</td></tr>
+<tr><td>Reports and evidence</td><td>Preserved while a report is open/under review or an order is under incident review, and for 30 days after report resolution. Report descriptions/replies are cleared when no other hold remains and order cleanup conditions are met. An administrator may record a separate preservation reason and end date, up to 365 days per setting; extensions require a renewed reason and end date.</td></tr>
+<tr><td>Profile contact details, messenger links and push tokens</td><td>Removed when cleanup clears identifying details from all the customer’s remaining orders. May remain while other orders are active or preserved.</td></tr>
+<tr><td>Authentication and remaining order/audit records</td><td>The scheduled cleanup does not delete every anonymous authentication identifier, account/order link, order number, status, fare, processing history or evidence audit record. These support account/access administration and order history. Request account and associated data deletion under section 7. We do not describe these remaining records as fully anonymized.</td></tr>
 </table></div>
-<p>Retention follows section 3, and each provider deletes the data when the contract ends or the purpose is fulfilled. If you do not want your data transferred abroad, you can stop using the Service or ask us to delete your data using the contact below. The delivery service may not be available in that case.</p>
-
-<h2>7. Your rights</h2>
-<p>You can ask to access, correct or delete your personal information, or to stop its processing, at any time. Send your request with your order number from the "Privacy &amp; data" screen in the app or by email. We will verify your identity and reply within 10 days.</p>
-
-<h2>8. How we protect it</h2>
-<ul>
-<li>All traffic between the app and our servers is encrypted (HTTPS)</li>
-<li>Row-level access control so only you and your assigned crew member can see your order</li>
-<li>Delivery photos are kept in private storage and opened only through time-limited links</li>
-<li>Expired data is deleted automatically</li>
-</ul>
-
-<h2>9. Tracking</h2>
-<p>The app does not use advertising identifiers or cookies to track your behavior.</p>
-
+<p>Cleanup is scheduled daily. Processing volume, errors and preservation can delay completion; this is not a guarantee that all data disappears within one month of delivery. When preservation is no longer needed, the relevant cleanup procedure applies.</p>
+<p>Where a legal retention duty applies, we retain only the necessary transaction/dispute information for that duty and restrict its use. On a deletion request we explain the records, basis and period that must be retained. Provider security logs and backups may follow separate schedules.</p>
+<h2>4. Deletion method</h2>
+<p>Expired direct identifiers are removed or replaced with values without those details; eligible photos are deleted from storage. Report text and replies are included in cleanup. Retaining order history or an account identifier differs from deleting the entire account. Failed cleanup is investigated and retried. Uninstalling the app alone does not delete server accounts or orders.</p>
+<h2>5. Delivery staff and external services</h2>
+<p>Assigned delivery crew and authorized operators access order/contact/location/photo information as needed for delivery and support. We do not sell customer data or use it for our own personalized advertising.</p>
+<p>The providers below process data for their functions. Google Maps SDK can directly collect technical data beyond order details and use it to operate and improve Google services. Your selected messenger’s own policy also applies. We may provide necessary information where legally required through valid procedures.</p>
+<h2>6. Providers and international processing</h2>
+<p>We use Supabase for order storage. Required data is transmitted over encrypted connections such as HTTPS when external functions are used. Countries below describe provider locations; processing abroad may occur through their global infrastructure and support.</p>
+<div class="wrap"><table><tr><th>Provider</th><th>Processing</th><th>Retention and details</th></tr>
+<tr><td>Supabase, Inc. (USA)</td><td>Orders, profiles, photos, reports, authentication and server functions</td><td>Company-managed data follows section 3; provider logs/backups follow settings and contracts. <a href="https://supabase.com/privacy">Policy/contact</a></td></tr>
+<tr><td>OpenAI (USA)</td><td>Receipt/booking images and recognition requests when used</td><td>Our API requests disable response storage, but do not guarantee zero retention. Default abuse-monitoring logs may be retained for up to 30 days, with legal/security exceptions. <a href="https://developers.openai.com/api/docs/guides/your-data">API data controls</a> · <a href="https://openai.com/policies/privacy-policy/">Policy/contact</a></td></tr>
+<tr><td>Google LLC (USA)</td><td>Place queries, map locations, IP address, device/request metadata, diagnostics/crashes, SDK identifier and map interactions</td><td>Maps and Google service maintenance/improvement; periods depend on data type and Google policy. <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">SDK disclosure</a> · <a href="https://policies.google.com/privacy">Policy/contact</a></td></tr>
+<tr><td>650 Industries, Inc. (Expo, USA), Google Firebase Cloud Messaging</td><td>Push tokens, notification content and delivery information when enabled</td><td>For notification delivery and service operation under provider policies. <a href="https://expo.dev/privacy">Expo</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a></td></tr>
+<tr><td>LY Corporation (LINE, Japan)</td><td>Identifiers, linking events and notification content when selected/linked</td><td>Our link records follow section 3; LINE records follow its policy. <a href="https://www.lycorp.co.jp/en/company/privacypolicy/">Policy/contact</a></td></tr>
+<tr><td>Meta Platforms (Instagram, USA)</td><td>Identifiers, linking events and DM content when selected/linked</td><td>Our link records follow section 3; Instagram records follow its policy. <a href="https://privacycenter.instagram.com/policy/">Policy/contact</a></td></tr>
+</table></div>
+<p>To avoid optional international processing you can use manual entry instead of recognition, or avoid the relevant messenger/notification feature. If you decline essential server processing, in-app ordering may be unavailable. Contact us to stop processing or request deletion. We cannot guarantee immediate deletion of all information held independently by providers.</p>
+<h2 id="delete-en">7. Account/data deletion and your rights</h2>
+<p>You may request access, correction, deletion or restriction. You can request deletion of <strong>your anonymous account and all associated data</strong> or only a specific order.</p>
+<ol><li>Use the email deletion option in the app’s “Privacy &amp; data” screen or our <a href="../delete-account/#en">web deletion instructions</a>. Reinstallation or login is not required.</li>
+<li>Email <a href="mailto:daonnaru01@gmail.com?subject=HandsFree%20Seoul%20account%20and%20data%20deletion">daonnaru01@gmail.com</a> with the requested scope and order number. If unknown, include the service date and contact messenger. Do not send passwords, identity documents or card numbers.</li>
+<li>We verify the request as necessary to prevent deletion of someone else’s data. Normally within 10 days of receipt, we explain the outcome or any verification/retention needs and expected timeline.</li></ol>
+<p>A full request covers the authentication account, profile, messenger links, push tokens and identifying order details, photos and reports. If legal duties, active delivery or disputes prevent immediate deletion, we explain the reason and period and restrict access. You may lose access to order history through the old session after deletion.</p>
+<h2>8. Security</h2>
+<p>We use encrypted app/server communications, role/ownership-based access controls, private photo storage and time-limited viewing links. Access is limited to authorized users such as administrators and assigned crew, with evidence access records.</p>
+<h2>9. Device storage and tracking</h2>
+<p>Authentication sessions and service preferences are stored on your device. We do not operate personalized advertising through an advertising SDK in the app. Map SDKs and external web/messenger pages may process technical data or cookies under their own policies.</p>
 <h2>10. Children</h2>
-<p>The Service is not intended for children under 14, and we do not knowingly collect their personal information.</p>
-
-<h2>11. Contact</h2>
-<div class="box">
-<p>Business name: Hands Free Seoul<br>
-Business registration no.: 204-33-19337<br>
-Privacy officer: Jeongwoo Lee (Representative)<br>
-Email: <a href="mailto:daonnaru01@gmail.com">daonnaru01@gmail.com</a></p>
-</div>
-
+<p>The Service is not intended for children under 14 and we do not knowingly collect their information. Contact us if such information has been processed.</p>
+<h2>11. Privacy contact</h2>
+<div class="box">Business: Hands Free Seoul<br>Business registration: 204-33-19337<br>Representative and privacy officer: Jeongwoo Lee<br>Email: <a href="mailto:daonnaru01@gmail.com">daonnaru01@gmail.com</a></div>
 <h2>12. Complaints</h2>
-<p>You may also contact the Korean authorities below about a privacy concern.</p>
-<ul>
-<li>Personal Information Infringement Report Center (KISA): privacy.kisa.or.kr / +82-118</li>
-<li>Personal Information Dispute Mediation Committee: www.kopico.go.kr / +82-1833-6972</li>
-</ul>
-
-<h2>13. Changes to this policy</h2>
-<p>We will post changes on this page at least 7 days before they take effect, or 30 days before for changes that significantly affect your rights.</p>
+<p>Contact the email above for privacy requests. You may also contact Korea’s <a href="https://privacy.kisa.or.kr/">Personal Information Infringement Report Center</a> or <a href="https://www.kopico.go.kr/">Personal Information Dispute Mediation Committee</a>.</p>
+<h2>13. Changes</h2>
+<p>We post ordinary changes at least 7 days before they take effect and material changes affecting rights at least 30 days before. Separate consent is obtained where needed. The November 26, 2026 publication clarifies existing processing in the latest app and corrects inaccurate earlier descriptions.</p>
 </section>
-</main>
-</body>
-</html>
+</main></body></html>
